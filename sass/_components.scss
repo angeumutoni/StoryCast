@@ -1,0 +1,41 @@
+.media-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  container-type: inline-size;
+}
+
+@container (max-width: 350px) {
+  .media-card {
+    font-size: 0.9rem;
+  }
+}
+
+.btn {
+  background: $accent;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:focus,
+button:focus {
+  outline: 3px solid $accent;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+}
