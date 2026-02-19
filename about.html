@@ -2,46 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | StoryCast</title>
+  <title>StoryCast | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header class="site-header">
-  <nav class="nav">
-    <h1 class="logo">StoryCast</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="page">
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <p class="logo">StoryCast</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main id="main-content">
+  <main id="main-content">
+    <section class="about-intro" aria-labelledby="about-title">
+      <h1 id="about-title">About StoryCast</h1>
+      <p>StoryCast is dedicated to making storytelling accessible to everyone. We believe that great stories should be available in multiple formats—audio, video, and text—so that everyone can engage in ways that work best for them.</p>
+      <p>Our mission is to create a platform where accessibility isn't an afterthought, but the foundation of everything we build. Every story we share is designed to be easy to read, simple to navigate, and equally positive and usable for all.</p>
+    </section>
 
-<section>
-  <h2>Our Mission</h2>
-  <p>StoryCast provides inclusive storytelling experiences through accessible audio and video media.</p>
-</section>
+    <section aria-labelledby="commitments-title">
+      <h2 id="commitments-title" class="commitment-title">Our Accessibility Commitments</h2>
+      <div class="commitment-grid">
+        <article>
+          <h3>Semantic HTML and ARIA</h3>
+          <p>We use clear, standards-based semantic markup and ARIA landmarks to improve navigation and compatibility with assistive technology.</p>
+        </article>
+        <article>
+          <h3>WCAG AA Contrast Standards</h3>
+          <p>All visual design elements and text meet accessible contrast thresholds to support readability for users with low vision.</p>
+        </article>
+        <article>
+          <h3>Transcripts and Captions</h3>
+          <p>Every media story includes synchronized captions and complete transcripts so users can consume content in multiple ways.</p>
+        </article>
+        <article>
+          <h3>Readable Typography</h3>
+          <p>Fonts, spacing, and text hierarchy are selected to improve comprehension and reduce cognitive strain across devices.</p>
+        </article>
+        <article>
+          <h3>Clear Focus Indicators</h3>
+          <p>Interactive controls include visible, consistent focus states so keyboard users can always track their position.</p>
+        </article>
+        <article>
+          <h3>Large Touch Targets</h3>
+          <p>Buttons and links are designed with generous touch areas to support users with limited dexterity and mobile users.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-<section>
-  <h2>Accessibility Commitment</h2>
-  <ul>
-    <li>Closed captions for all media content</li>
-    <li>Full transcripts available</li>
-    <li>Keyboard-friendly navigation</li>
-    <li>WCAG 2.1 AA color contrast compliance</li>
-  </ul>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <p>&copy; 2026 StoryCast</p>
-</footer>
+  <footer class="site-footer">
+    <span>Let's Connect</span>
+    <span class="footer-icons" aria-hidden="true">◎ ◇ ✕</span>
+  </footer>
+</div>
 
 </body>
 </html>
